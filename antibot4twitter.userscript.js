@@ -6,7 +6,7 @@
 // @author       codeninja_ru
 // @match               *://twitter.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
-// @updateURL https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot2twitter.userscript.js
+// @updateURL https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.userscript.js
 // @grant    GM.xmlHttpRequest
 // @grant    GM.addStyle
 // @grant    GM.getValue

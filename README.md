@@ -13,7 +13,7 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 # Установка
 
 Добавьте следующую ссылку в свой скрипт менеджер
-https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot2twitter.userscript.js
+https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.userscript.js
 
 Протестировано на
 * Safari + Tampermonkey
