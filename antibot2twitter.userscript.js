@@ -1,22 +1,35 @@
 // ==UserScript==
 // @name         Twitter Antibot
 // @namespace    twitter
-// @version      0.2
+// @version      0.2.3
 // @description  antibot for twitter
 // @author       codeninja_ru
 // @match               *://twitter.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=twitter.com
+// @updateURL https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot2twitter.userscript.js
+// @grant    GM.xmlHttpRequest
+// @grant    GM.addStyle
+// @grant    GM.getValue
+// @grant    GM.setValue
+// @grant    GM.deleteValue
+// @grant    GM_xmlHttpRequest
 // @grant    GM_addStyle
 // @grant    GM_getValue
 // @grant    GM_setValue
 // @grant    GM_deleteValue
-// @updateURL https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot2twitter.userscript.js
+// @connect raw.githubusercontent.com
 // ==/UserScript==
 
 
 const BOT_DB_URL = 'https://raw.githubusercontent.com/antibot4navalny/accounts_labelled/main/labels.json';
 
-GM_addStyle(`article[data-bot] {
+const gmDeleteValue = typeof GM.deleteValue == 'function' ? GM.deleteValue : GM_deleteValue;
+const gmSetValue = typeof GM.setValue == 'function' ? GM.setValue : GM_setValue;
+const gmGetValue = typeof GM.getValue == 'function' ? GM.getValue : GM_getValue;
+const gmXmlHttpRequest = typeof GM_xmlHttpRequest == 'function' ? GM_xmlHttpRequest : GM.xmlHttpRequest;
+const gmAddStyle = typeof GM.addStyle == 'function' ? GM.addStyle : GM_addStyle;
+
+gmAddStyle(`article[data-bot] {
         background: #FEE !important;
     }
 
@@ -84,13 +97,32 @@ function getUserName(tweet) {
 }
 
 function getGmValue(name, defaultValue = undefined) {
-    const value = GM.getValue(name, defaultValue);
+    const value = gmGetValue(name, defaultValue);
 
     // GM.set/getValue in  Violentmonkey are sync, in most other enginese they are async
     if (value instanceof Promise) {
         return value;
     } else {
-        return new Promise(value);
+        return Promise.resolve(value);
+    }
+}
+
+function xFetch(url) {
+    if (typeof fetch == 'function') {
+        return fetch(url).then((resp) => resp.json());
+    } else {
+        return new Promise(function(resolve, reject) {
+            gmXmlHttpRequest({
+                method: "GET",
+                url: url,
+                onload: function(response) {
+                    resolve(JSON.parse(response.responseText));
+                },
+                onerror: function(err) {
+                    reject(err);
+                }
+            });
+        });
     }
 }
 
@@ -104,12 +136,12 @@ function loadBotDb(url) {
                 return cache.value;
             }
         }
-        GM.deleteValue(url);
-        return fetch(url)
-            .then(resp => resp.json());
+        gmDeleteValue(url);
+
+        return xFetch(url);
     }).then(db => {
         botDb = Object.assign(botDb, db);
-        GM.setValue(url, {
+        gmSetValue(url, {
             last_update: Date.now(),
             value: db,
         });
@@ -148,3 +180,4 @@ watchOnTweets(function(tweets) {
 loadBotDb(BOT_DB_URL).then(() => selectAllTweets(document).forEach(processTweet));
 
 console.log('Twitter Antibot has started');
+
