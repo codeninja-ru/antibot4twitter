@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitter Antibot
 // @namespace    twitter
-// @version      0.1
+// @version      0.2
 // @description  antibot for twitter
 // @author       codeninja_ru
 // @match               *://twitter.com/*
@@ -54,7 +54,7 @@ function watchOnTweets(newTweetCallback) {
                         return node instanceof Element;
                     })
                         .forEach(function(element) {
-                        element.querySelectorAll('article[role=article]').forEach(function(tweet) {
+                        selectAllTweets(element).forEach(function(tweet) {
                             tweets.push(tweet);
                         });
                     });
@@ -94,72 +94,36 @@ function getGmValue(name, defaultValue = undefined) {
     }
 }
 
-async function getDbFromCache() {
-    const timestamp = await getGmValue('db_lastupdate', 0);
-    if (Date.now() - timestamp < 3600 * 24) {
-        var db = await getGmValue('db');
-        if (db) {
-            console.log('the db has been loaded from the cache');
-            return db;
+var botDb = {};
+
+function loadBotDb(url) {
+    return getGmValue(url).then(cache => {
+        if (cache && cache.value && cache.last_update) {
+            if (Date.now() - cache.last_update < 3600 * 24) {
+                console.log(`the db ${url} has been loaded from the cache`);
+                return cache.value;
+            }
         }
-    } else {
-        GM.deleteValue('db_lastupdate');
-        GM.deleteValue('db');
-    }
-}
-
-var botDb = await getDbFromCache();
-var botDbStatus = 0; // 0 - not loaded, 1 - loading, 2 - loaded, 3 - failed;
-const LOADING_STAUS = {NOT_LOADED: 0, LOADING: 1, LOADED: 2, FAILED: 3};
-if (botDb) {
-    botDbStatus = LOADING_STAUS.LOADED;
-}
-
-var botDbLoadingPromise;
-function getDb() {
-    if (botDbStatus == LOADING_STAUS.LOADING) {
-        return botDbLoadingPromise;
-    }
-    botDbLoadingPromise = new Promise(function(resolve, reject) {
-        if (botDbStatus == LOADING_STAUS.NOT_LOADED) {
-            botDbStatus = LOADING_STAUS.LOADING;
-            console.log('loading the bot db');
-            fetch(BOT_DB_URL).then(function(resp) {
-                resp.json().then(function(db) {
-                    botDbStatus = LOADING_STAUS.LOADED;
-                    botDb = db;
-                    GM.setValue('db', db);
-                    GM.setValue('db_lastupdate',  Date.now());
-                    console.log('the bot db is loaded');
-                    resolve(db);
-                }).catch(function(err) {
-                    alert('Could not parse the bot db, error: ' + err);
-                    botDbStatus = LOADING_STAUS.FAILED;
-                    reject(err);
-                });
-
-            }).catch(function(err) {
-                botDbStatus = LOADING_STAUS.FAILED;
-                alert('Could not load the bot db, error: ' + err);
-                reject(err);
-            });
-        } else if (botDbStatus == LOADING_STAUS.LOADED) {
-            resolve(botDb);
-        } else {
-            reject('not loaded');
-        }
-
+        GM.deleteValue(url);
+        return fetch(url)
+            .then(resp => resp.json());
+    }).then(db => {
+        botDb = Object.assign(botDb, db);
+        GM.setValue(url, {
+            last_update: Date.now(),
+            value: db,
+        });
+        return db;
+    }).catch(err => {
+        alert(`Could not load the db from url: ${url}, err: ${err}`);
     });
 
-    return botDbLoadingPromise;
 }
 
 function checkIfBot(userName, botCallback) {
-    getDb().then(function(db) {
-        if (db[userName] !== undefined) {
-            botCallback(db[userName]);
-        }
-    });
+    if (botDb[userName] !== undefined) {
+        botCallback(botDb[userName]);
+    }
 }
 
 function processTweet(tweet) {
@@ -173,10 +137,14 @@ function processTweet(tweet) {
     }
 }
 
-document.querySelectorAll('article[role=article]').forEach(processTweet);
+function selectAllTweets(element) {
+    return element.querySelectorAll('article[role=article]');
+}
 
 watchOnTweets(function(tweets) {
     tweets.forEach(processTweet);
 });
+
+loadBotDb(BOT_DB_URL).then(() => selectAllTweets(document).forEach(processTweet));
 
 console.log('Twitter Antibot has started');
