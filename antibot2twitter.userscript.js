@@ -10,6 +10,7 @@
 // @grant    GM_getValue
 // @grant    GM_setValue
 // @grant    GM_deleteValue
+// @updateURL https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot2twitter.userscript.js
 // ==/UserScript==
 
 
