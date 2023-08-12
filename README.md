@@ -6,7 +6,7 @@
 ![alt text](https://github.com/codeninja-ru/antibot4twitter/blob/main/img/example.png?raw=true)
 
 Основан на расширении для бразуера и базе кремлеботов
-https://github.com/antibot4navalny/metabot
+https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.com/antibot4navalny)
 
 # Установка
 
