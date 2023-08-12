@@ -1,7 +1,8 @@
-# antibot4twitter
+# Подсветка кремлеботов в Twitter (Userscript)
 
-Userscript подсвечивает ботов в твиттере.
+Подсвечивает ботов в твиттере.
 
+Пример:
 ![alt text](https://github.com/codeninja-ru/antibot4twitter/blob/main/img/example.png?raw=true)
 
 Основан на расширении для бразуера и базе кремлеботов
