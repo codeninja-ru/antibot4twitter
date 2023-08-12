@@ -109,11 +109,28 @@ function getGmValue(name, defaultValue = undefined) {
 
 function xFetch(url) {
     if (typeof fetch == 'function') {
-        return fetch(url).then((resp) => resp.json());
+        return fetch(url)
+            .then((resp) => resp.json())
+            .catch(err => {
+                return new Promise(function(resolve, reject) {
+                    gmXmlHttpRequest({
+                        method: "GET",
+                        anonymous: true,
+                        url: url,
+                        onload: function(response) {
+                            resolve(JSON.parse(response.responseText));
+                        },
+                        onerror: function(err) {
+                            reject(err);
+                        }
+                    });
+                });
+            });
     } else {
         return new Promise(function(resolve, reject) {
             gmXmlHttpRequest({
                 method: "GET",
+                anonymous: true,
                 url: url,
                 onload: function(response) {
                     resolve(JSON.parse(response.responseText));
