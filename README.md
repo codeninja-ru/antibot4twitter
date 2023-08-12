@@ -7,7 +7,7 @@
     <img width="60%" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/example.png?raw=true">
 </p>
 
-Основан на расширении для бразуера и базе кремлеботов
+Основан на расширении для браузера и базе кремлеботов
 https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.com/antibot4navalny)
 
 # Установка
@@ -15,7 +15,7 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 Добавьте следующую ссылку в свой скрипт менеджер
 https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot2twitter.userscript.js
 
-Протестированано на 
+Протестировано на
 * Safari + Tampermonkey
 * Chrome + Violentmonkey
 
