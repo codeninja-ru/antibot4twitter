@@ -163,7 +163,7 @@ function processTweet(tweet) {
     if (userName) {
         checkIfBot(userName, function(botInfo) {
             console.log("bot's message found, userName: " + userName);
-            tweet.dataset.bot = botInfo == 'yellow' ? 'yellow' : 'red';
+            tweet.dataset.bot = botInfo;
             tweet.querySelector('span').dataset.botName = 1;
         });
     }
