@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitter Antibot
 // @namespace    twitter
-// @version      0.2.3
+// @version      0.2.4
 // @description  antibot for twitter
 // @author       codeninja_ru
 // @match               *://twitter.com/*
