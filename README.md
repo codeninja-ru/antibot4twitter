@@ -3,10 +3,8 @@
 Подсвечивает ботов в твиттере.
 
 Пример:
-![alt text](https://github.com/codeninja-ru/antibot4twitter/blob/main/img/example.png?raw=true)
-
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/example.png?raw=true">
+    <img width="60%" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/example.png?raw=true">
 </p>
 
 Основан на расширении для бразуера и базе кремлеботов
