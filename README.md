@@ -18,4 +18,4 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 Протестировано на
 * Safari + [Tampermonkey](https://www.tampermonkey.net/)
 * Chrome + [Violentmonkey](https://violentmonkey.github.io/)
-* Safari (iOS) + Userscripts(https://github.com/quoid/userscripts/)
+* Safari (iOS) + [Userscripts](https://github.com/quoid/userscripts/)
