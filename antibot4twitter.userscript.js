@@ -1,7 +1,11 @@
 // ==UserScript==
 // @name         Twitter Antibot
+// @name:ru      Twitter Antibot
+// @description The script highlights the Kremlin's bots in the Russian-language segment of Twitter
+// @description:ru  Подсвечивает ботов в твиттере.
 // @namespace    twitter
-// @version      0.2.5
+// @version      0.2.6
+// @license MIT 
 // @description  antibot for twitter
 // @author       codeninja_ru
 // @match               *://twitter.com/*
@@ -22,6 +26,8 @@
 
 
 const BOT_DB_URL = 'https://raw.githubusercontent.com/antibot4navalny/accounts_labelled/main/labels.json';
+const BOT_DB_MANUAL_URL = 'https://raw.githubusercontent.com/antibot4navalny/accounts_labelled/main/labels_manual.json';
+
 
 const gmDeleteValue = typeof GM.deleteValue == 'function' ? GM.deleteValue : GM_deleteValue;
 const gmSetValue = typeof GM.setValue == 'function' ? GM.setValue : GM_setValue;
@@ -195,6 +201,7 @@ watchOnTweets(function(tweets) {
 });
 
 loadBotDb(BOT_DB_URL).then(() => selectAllTweets(document).forEach(processTweet));
+loadBotDb(BOT_DB_MANUAL_URL).then(() => selectAllTweets(document).forEach(processTweet));
 
 console.log('Twitter Antibot has started');
 
