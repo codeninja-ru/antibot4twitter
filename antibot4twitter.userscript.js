@@ -4,7 +4,7 @@
 // @description The script highlights the Kremlin's bots in the Russian-language segment of Twitter
 // @description:ru  Подсвечивает ботов в твиттере.
 // @namespace    twitter
-// @version      0.2.6
+// @version      0.2.7
 // @license MIT 
 // @description  antibot for twitter
 // @author       codeninja_ru
@@ -154,7 +154,7 @@ var botDb = {};
 function loadBotDb(url) {
     return getGmValue(url).then(cache => {
         if (cache && cache.value && cache.last_update) {
-            if (Date.now() - cache.last_update < 3600 * 24) {
+            if (Date.now() - cache.last_update < 3600000 * 24) {
                 console.log(`the db ${url} has been loaded from the cache`);
                 return cache.value;
             }

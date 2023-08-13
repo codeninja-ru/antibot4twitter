@@ -16,6 +16,6 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.userscript.js
 
 Протестировано на
-* Safari + Tampermonkey
-* Chrome + Violentmonkey
-
+* Safari + [Tampermonkey](https://www.tampermonkey.net/)
+* Chrome + [Violentmonkey](https://violentmonkey.github.io/)
+* Safari (iOS) + Userscripts(https://github.com/quoid/userscripts/)
