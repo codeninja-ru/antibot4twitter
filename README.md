@@ -23,9 +23,13 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 * [Userscripts](https://github.com/quoid/userscripts/) (Поддерживает: Safari, Safari iOS)
 
 Добавьте следующую ссылку в свой скрипт менеджер
-https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.userscript.js
+https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js
 
 ## Tampermonkey (Chrome, Microsoft Edge, Firefox, Safari💲, Opera Next)
+
+1. Установите расширение [Tampermonkey](https://www.tampermonkey.net/)
+
+
 ## Violentmonkey (Chrome, Microsoft Edge, Firefox)
 ## Userscripts (iOS)
 
@@ -37,7 +41,7 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 
 Вкючите расширение <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/userscripts.png?raw=true">Userscripts и укажите папку с юзерскритами. Если вы планируете испльзоваться Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud. Например папку "Загрузки"
 
-Скачайте [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.userscript.js) в выбранную папку. Для этого нажмите и удерживатейте палец на ссылке пока не появится меню действий.
+Скачайте [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js) в выбранную папку. Для этого нажмите и удерживатейте палец на ссылке пока не появится меню действий.
 <p align="center" width="100%">
     <img width="320px" alt="Safari Download Menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_download.png?raw=true">
 </p>
@@ -48,3 +52,5 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
     <img width="320px" alt="Safari As menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_aa_menu.png?raw=true">
     <img width="320px" alt="Safari Userscripts Menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_userscripts_on.png?raw=true">
 </p>
+
+Примечание: К сожалению, расширения Userscripts не работают в сайтах установленных как Web App.
