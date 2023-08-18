@@ -4,7 +4,7 @@
 // @description The script highlights the Kremlin's bots in the Russian-language segment of Twitter
 // @description:ru  Подсвечивает ботов в твиттере.
 // @namespace    twitter
-// @version      0.2.9
+// @version      0.2.8
 // @license MIT 
 // @description  antibot for twitter
 // @author       codeninja_ru
