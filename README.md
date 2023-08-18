@@ -39,7 +39,7 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 
 1. Установите расширение [Violentmonkey](https://violentmonkey.github.io/)
 2. Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js)
-3. Violentmonkey должен предложить вам установить юзерскрипт. Нажмите кнопку *Confim Installation*
+3. Violentmonkey должен предложить вам установить юзерскрипт. Нажмите кнопку *Confirm Installation*
 <p align="center" width="100%">
     <img width="640px" alt="Violentmonkey install" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/violentmonkey_install.png?raw=true">
 </p>
@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
     <img width="240px" alt="Safari Install 3" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_install3.png?raw=true">
 </p>
 
-Откройте [twitter](https://twitter.com/) в Safari и убедитесь, что Userscripts нашел antibot4twitter и он включен. Для этого коснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в меню настроек в адресной строке Safari.
+Откройте [Twitter](https://twitter.com/) в Safari и убедитесь, что Userscripts нашел antibot4twitter и он включен. Для этого коснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в меню настроек в адресной строке Safari.
 
 <p align="center" width="100%">
     <img width="240px" alt="Safari As menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_aa_menu.png?raw=true">
