@@ -25,6 +25,15 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 Добавьте следующую ссылку в свой скрипт менеджер
 https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js
 
+## Violentmonkey (Chrome, Microsoft Edge, Firefox) __Рекомендуется
+
+1. Установите расширение [Violentmonkey](https://violentmonkey.github.io/)
+2. Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js)
+3. Violentmonkey должен предложить вам установить юзерскрипт. Нажмите кнопку *Confirm Installation*
+<p align="center" width="100%">
+    <img width="640px" alt="Violentmonkey install" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/violentmonkey_install.png?raw=true">
+</p>
+
 ## Tampermonkey (Chrome, Microsoft Edge, Firefox, Safari💲, Opera Next)
 
 1. Установите расширение [Tampermonkey](https://www.tampermonkey.net/)
@@ -32,16 +41,6 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 3. Tampermonkey должен предложить вам установить юзерскрипт. Нажмите кнопку _Install_
 <p align="center" width="100%">
     <img width="640px" alt="Tampermonkey install" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/tampermonkey_install.png?raw=true">
-</p>
-
-
-## Violentmonkey (Chrome, Microsoft Edge, Firefox)
-
-1. Установите расширение [Violentmonkey](https://violentmonkey.github.io/)
-2. Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js)
-3. Violentmonkey должен предложить вам установить юзерскрипт. Нажмите кнопку *Confirm Installation*
-<p align="center" width="100%">
-    <img width="640px" alt="Violentmonkey install" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/violentmonkey_install.png?raw=true">
 </p>
 
 ## Userscripts (iOS)
