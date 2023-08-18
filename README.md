@@ -17,7 +17,7 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 
 # Установка
 
-Для установки скрипта вам нужено иметь юзерскрип мендажер. Установите один из следующих менаджеров подходящий для вашего браузера:
+Для установки скрипта вам нужно иметь юзерскрип менеджер. Установите один из следующих менеджеров подходящий для вашего браузера:
 * [Tampermonkey](https://www.tampermonkey.net/) (Поддерживает: Chrome, Microsoft Edge, Firefox, Safari💲, Opera Next)
 * [Violentmonkey](https://violentmonkey.github.io/) (Поддерживает: Chrome, Microsoft Edge, Firefox)
 * [Userscripts](https://github.com/quoid/userscripts/) (Поддерживает: Safari, Safari iOS)
@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 
 1. Установите расширение [Tampermonkey](https://www.tampermonkey.net/)
 2. Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js)
-3. Tampermonkey должен предлажить вам установить юзерскрипт. Нажимите кнопку _Install_
+3. Tampermonkey должен предложить вам установить юзерскрипт. Нажмите кнопку _Install_
 <p align="center" width="100%">
     <img width="640px" alt="Tampermonkey install" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/tampermonkey_install.png?raw=true">
 </p>
@@ -39,7 +39,7 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 
 1. Установите расширение [Violentmonkey](https://violentmonkey.github.io/)
 2. Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js)
-3. Violentmonkey должен предлажить вам установить юзерскрипт. Нажимите кнопку *Confim Installation*
+3. Violentmonkey должен предложить вам установить юзерскрипт. Нажмите кнопку *Confim Installation*
 <p align="center" width="100%">
     <img width="640px" alt="Violentmonkey install" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/violentmonkey_install.png?raw=true">
 </p>
@@ -50,18 +50,18 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 
 Зайдите в настройки браузера Safari вашего устройства <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_settings.png?raw=true">Настройки > <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari.png?raw=true">Safari > Расширения
 
-Вкючите расширение <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/userscripts.png?raw=true">Userscripts и укажите папку со скриптами. _Если вы планируете испльзоваться Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud._
+Включите расширение <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/userscripts.png?raw=true">Userscripts и укажите папку со скриптами. _Если вы планируете использовать Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud._
 
 Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js) 
 
-Каснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в адресной строке и выбирите _Userscrips_ в появившемся меню. Userscripts запросит доступ к сайту github и предложит вам установить скрипт.
+Коснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в адресной строке и выберите _Userscrips_ в появившемся меню. Userscripts запросит доступ к сайту github и предложит вам установить скрипт.
 <p align="center" width="100%">
     <img width="240px" alt="Safari Install 1" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_install1.png?raw=true">
     <img width="240px" alt="Safari Install 2" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_install2.png?raw=true">
     <img width="240px" alt="Safari Install 3" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_install3.png?raw=true">
 </p>
 
-Откройте [twitter](https://twitter.com/) в Safari и убидетись, что Userscripts нашел antibot4twitter и он включен. Для этого каснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в меню настроек в адрессной строке Safari.
+Откройте [twitter](https://twitter.com/) в Safari и убедитесь, что Userscripts нашел antibot4twitter и он включен. Для этого коснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в меню настроек в адресной строке Safari.
 
 <p align="center" width="100%">
     <img width="240px" alt="Safari As menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_aa_menu.png?raw=true">
