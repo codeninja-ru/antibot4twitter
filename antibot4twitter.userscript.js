@@ -4,7 +4,7 @@
 // @description The script highlights the Kremlin's bots in the Russian-language segment of Twitter
 // @description:ru  Подсвечивает ботов в твиттере.
 // @namespace    twitter
-// @version      0.2.7
+// @version      0.2.8
 // @license MIT 
 // @description  antibot for twitter
 // @author       codeninja_ru
@@ -114,25 +114,7 @@ function getGmValue(name, defaultValue = undefined) {
 }
 
 function xFetch(url) {
-    if (typeof fetch == 'function') {
-        return fetch(url)
-            .then((resp) => resp.json())
-            .catch(err => {
-                return new Promise(function(resolve, reject) {
-                    gmXmlHttpRequest({
-                        method: "GET",
-                        anonymous: true,
-                        url: url,
-                        onload: function(response) {
-                            resolve(JSON.parse(response.responseText));
-                        },
-                        onerror: function(err) {
-                            reject(err);
-                        }
-                    });
-                });
-            });
-    } else {
+    const fetchUrl = function(url) {
         return new Promise(function(resolve, reject) {
             gmXmlHttpRequest({
                 method: "GET",
@@ -146,6 +128,18 @@ function xFetch(url) {
                 }
             });
         });
+    };
+    if (typeof fetch == 'function') {
+        // xmlHttpRequest is not working on some platforms, so fetch is called first
+        // see https://github.com/Tampermonkey/tampermonkey/issues/1838
+        // TODO remove fetch once the issue is fixed
+        return fetch(url)
+            .then((resp) => resp.json())
+            .catch(err => {
+                return fetchUrl(url);
+            });
+    } else {
+        return fetchUrl(url);
     }
 }
 
@@ -200,8 +194,9 @@ watchOnTweets(function(tweets) {
     tweets.forEach(processTweet);
 });
 
-loadBotDb(BOT_DB_URL).then(() => selectAllTweets(document).forEach(processTweet));
-loadBotDb(BOT_DB_MANUAL_URL).then(() => selectAllTweets(document).forEach(processTweet));
+Promise.all([
+    loadBotDb(BOT_DB_URL),
+    loadBotDb(BOT_DB_MANUAL_URL)
+]).then(() => selectAllTweets(document).forEach(processTweet));
 
 console.log('Twitter Antibot has started');
-
