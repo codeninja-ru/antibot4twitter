@@ -35,8 +35,8 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 Откройте [twitter](https://twitter.com/) в Safari и убидетись, что Userscripts нашел antibot4twitter и он включен. Для этого каснитесь кнопки ![AA](/img/ios_safari_aa.png){:height="36px" width="36px"} в меню настроек в адрессной строке Safari.
 
 <p align="center" width="100%">
-    <img width="640px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img//img/safari_aa_menu.png">
-    <img width="640px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img//img/safari_userscripts_on.png">
+    <img width="640px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_aa_menu.png?raw=true">
+    <img width="640px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_userscripts_on.png?raw=true">
 </p>
 ![Safari Aa Menu](/img/safari_aa_menu.png | width=640px) ![Safari Userscripts Menu](/img/safari_userscripts_on.png | width=640px)
 
