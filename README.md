@@ -48,17 +48,13 @@ https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twit
 
 Установите расширение Userscripts из [AppStore](https://itunes.apple.com/us/app/userscripts/id1463298887)
 
-Зайдите в настройки браузера Safari вашего устройства 
+Зайдите в настройки браузера Safari вашего устройства <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_settings.png?raw=true">Настройки > <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari.png?raw=true">Safari > Расширения
 
-<img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_settings.png?raw=true">Настройки > <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari.png?raw=true">Safari > Расширения
-
-Вкючите расширение <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/userscripts.png?raw=true">Userscripts и укажите папку со скриптами. Если вы планируете испльзоваться Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud.
+Вкючите расширение <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/userscripts.png?raw=true">Userscripts и укажите папку со скриптами. _Если вы планируете испльзоваться Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud._
 
 Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js) 
 
-Каснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в адресной строке и выбирите _Userscrips_ в появившемся меню.
-
-Userscripts запросит доступ к сайту github и предложит вам установить скрипт.
+Каснитесь кнопки <img width="18px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_safari_aa.png?raw=true"> в адресной строке и выбирите _Userscrips_ в появившемся меню. Userscripts запросит доступ к сайту github и предложит вам установить скрипт.
 <p align="center" width="100%">
     <img width="240px" alt="Safari Install 1" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_install1.png?raw=true">
     <img width="240px" alt="Safari Install 2" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_install2.png?raw=true">
