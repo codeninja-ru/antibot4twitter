@@ -28,7 +28,7 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 
 Установите расширение Userscripts из [AppStore](https://itunes.apple.com/us/app/userscripts/id1463298887)
 
-Зайдите в настройки браузера Safari вашего устройства ![Настройки](/img/ios_settings.png{:height="36px" width="36px"})Настройки > ![Safari](/img/safari.png){:height="36px" width="36px"}Safari > Расширения
+Зайдите в настройки браузера Safari вашего устройства <img width="32px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/ios_settings.png?raw=true">Настройки > ![Safari](/img/safari.png){:height="36px" width="36px"}Safari > Расширения
 Вкючите расширение ![Userscripts](/img/userscripts.png){:height="36px" width="36px"}Userscripts и укажите папку с юзерскритами. Если вы планируете испльзоваться Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud.
 Скачайте antibot4twitter в выбранную папку.
 
