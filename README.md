@@ -28,17 +28,16 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 
 Установите расширение Userscripts из [AppStore](https://itunes.apple.com/us/app/userscripts/id1463298887)
 
-Зайдите в настройки браузера Safari вашего устройства ![Настройки](/img/ios_settings.png){:height="36px" width="36px"}Настройки > ![Safari](/img/safari.png){:height="36px" width="36px"}Safari > Расширения
+Зайдите в настройки браузера Safari вашего устройства ![Настройки](/img/ios_settings.png{:height="36px" width="36px"})Настройки > ![Safari](/img/safari.png){:height="36px" width="36px"}Safari > Расширения
 Вкючите расширение ![Userscripts](/img/userscripts.png){:height="36px" width="36px"}Userscripts и укажите папку с юзерскритами. Если вы планируете испльзоваться Userscripts на вашем ПК и других устройствах, имеет смысл выбрать папку в iCloud.
 Скачайте antibot4twitter в выбранную папку.
 
 Откройте [twitter](https://twitter.com/) в Safari и убидетись, что Userscripts нашел antibot4twitter и он включен. Для этого каснитесь кнопки ![AA](/img/ios_safari_aa.png){:height="36px" width="36px"} в меню настроек в адрессной строке Safari.
 
 <p align="center" width="100%">
-    <img width="640px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_aa_menu.png?raw=true">
-    <img width="640px" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_userscripts_on.png?raw=true">
+    <img width="320px" alt="Safari As menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_aa_menu.png?raw=true">
+    <img width="320px" alt="Safari Userscripts Menu" src="https://github.com/codeninja-ru/antibot4twitter/blob/main/img/safari_userscripts_on.png?raw=true">
 </p>
-![Safari Aa Menu](/img/safari_aa_menu.png | width=640px) ![Safari Userscripts Menu](/img/safari_userscripts_on.png | width=640px)
 
 Добавьте следующую ссылку в свой скрипт менеджер
 https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.userscript.js
