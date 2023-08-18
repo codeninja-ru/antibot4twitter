@@ -25,7 +25,7 @@ https://github.com/antibot4navalny/metabot © [antibot4navalny](https://twitter.
 Добавьте следующую ссылку в свой скрипт менеджер
 https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js
 
-## Violentmonkey (Chrome, Microsoft Edge, Firefox) __Рекомендуется
+## Violentmonkey (Chrome, Microsoft Edge, Firefox) _Рекомендуется_
 
 1. Установите расширение [Violentmonkey](https://violentmonkey.github.io/)
 2. Перейдите по ссылке [antibot4twitter](https://raw.githubusercontent.com/codeninja-ru/antibot4twitter/main/antibot4twitter.user.js)
